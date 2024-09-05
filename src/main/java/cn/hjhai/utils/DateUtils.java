@@ -1,13 +1,13 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/9/20 16:27
+ * @date 2023/9/20 16:27
  */
 public class DateUtils {
      public static String plusDay(int num){

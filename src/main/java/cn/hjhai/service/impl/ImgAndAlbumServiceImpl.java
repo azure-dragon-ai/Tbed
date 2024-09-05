@@ -1,18 +1,19 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.dao.ImgAndAlbumMapper;
-import cn.hellohao.pojo.Images;
-import cn.hellohao.pojo.ImgAndAlbum;
-import cn.hellohao.service.ImgAndAlbumService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import cn.hjhai.dao.ImgAndAlbumMapper;
+import cn.hjhai.pojo.Images;
+import cn.hjhai.pojo.ImgAndAlbum;
+import cn.hjhai.service.ImgAndAlbumService;
 
 import java.util.List;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/12/19 15:40
+ * @date 2023/12/19 15:40
  */
 @Service
 public class ImgAndAlbumServiceImpl implements ImgAndAlbumService {

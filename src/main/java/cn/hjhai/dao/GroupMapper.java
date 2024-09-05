@@ -1,15 +1,16 @@
-package cn.hellohao.dao;
+package cn.hjhai.dao;
 
-import cn.hellohao.pojo.Group;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+
+import cn.hjhai.pojo.Group;
 
 import java.util.List;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/8/19 16:11
+ * @date 2023/8/19 16:11
  */
 @Mapper
 public interface GroupMapper {

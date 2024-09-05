@@ -1,10 +1,10 @@
-package cn.hellohao.pojo;
+package cn.hjhai.pojo;
 
 import java.io.Serializable;
 
 /**
  * 交互消息,默认成功
- * @author Hellohao
+ * @author Peter Zhang
  *
  */
 public class Msg implements Serializable {

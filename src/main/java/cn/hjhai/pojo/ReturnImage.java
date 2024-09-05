@@ -1,7 +1,7 @@
-package cn.hellohao.pojo;
+package cn.hjhai.pojo;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
  * @date 2021-10-22 11:35
  */

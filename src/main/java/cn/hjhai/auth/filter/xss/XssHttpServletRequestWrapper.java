@@ -1,4 +1,4 @@
-package cn.hellohao.auth.filter.xss;
+package cn.hjhai.auth.filter.xss;
 
 import com.alibaba.fastjson.JSON;
 import org.apache.commons.text.StringEscapeUtils;
@@ -14,7 +14,7 @@ import java.util.Map;
 
 /**
  * ServletRequest包装类,对request做XSS过滤处理
- * @author Hellohao
+ * @author Peter Zhang
  */
 public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {
 

@@ -1,7 +1,7 @@
-package cn.hellohao.config;
+package cn.hjhai.config;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
  * @date 2020/5/15 9:20
  */

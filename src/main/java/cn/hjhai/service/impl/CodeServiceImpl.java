@@ -1,17 +1,18 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.dao.CodeMapper;
-import cn.hellohao.pojo.Code;
-import cn.hellohao.service.CodeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import cn.hjhai.dao.CodeMapper;
+import cn.hjhai.pojo.Code;
+import cn.hjhai.service.CodeService;
 
 import java.util.List;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019-08-11 14:21
+ * @date 2023-08-11 14:21
  */
 @Service
 public class CodeServiceImpl implements CodeService {

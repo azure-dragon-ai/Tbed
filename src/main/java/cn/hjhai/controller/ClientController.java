@@ -1,18 +1,19 @@
-package cn.hellohao.controller;
+package cn.hjhai.controller;
 
-import cn.hellohao.pojo.Msg;
-import cn.hellohao.service.impl.ClientService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import cn.hjhai.pojo.Msg;
+import cn.hjhai.service.impl.ClientService;
+
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019-07-18 17:22
+ * @date 2023-07-18 17:22
  */
 @RestController
 @RequestMapping("/api")

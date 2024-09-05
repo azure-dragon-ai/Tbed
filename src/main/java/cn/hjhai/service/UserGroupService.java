@@ -1,12 +1,13 @@
-package cn.hellohao.service;
+package cn.hjhai.service;
 
-import cn.hellohao.pojo.UserGroup;
 import org.springframework.stereotype.Service;
 
+import cn.hjhai.pojo.UserGroup;
+
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/8/20 14:12
+ * @date 2023/8/20 14:12
  */
 @Service
 public interface UserGroupService {

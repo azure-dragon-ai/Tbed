@@ -12,7 +12,7 @@
     <artifactId>Tbed</artifactId>
     <version>2.0-Free</version>
     <name>Tbed</name>
-    <description>Hellohao project for Spring Boot</description>
+    <description>HjhAI project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>

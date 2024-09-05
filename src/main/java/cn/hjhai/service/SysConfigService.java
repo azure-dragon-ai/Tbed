@@ -1,12 +1,13 @@
-package cn.hellohao.service;
+package cn.hjhai.service;
 
-import cn.hellohao.pojo.SysConfig;
 import org.springframework.stereotype.Service;
 
+import cn.hjhai.pojo.SysConfig;
+
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/8/15 13:46
+ * @date 2023/8/15 13:46
  */
 @Service
 public interface SysConfigService {

@@ -1,8 +1,8 @@
-package cn.hellohao.controller;
+package cn.hjhai.controller;
 
-import cn.hellohao.pojo.Code;
-import cn.hellohao.pojo.Msg;
-import cn.hellohao.service.CodeService;
+import cn.hjhai.pojo.Code;
+import cn.hjhai.pojo.Msg;
+import cn.hjhai.service.CodeService;
 import cn.hutool.crypto.SecureUtil;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.*;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019-08-11 14:25
+ * @date 2023-08-11 14:25
  */
 @Controller
 @RequestMapping("/admin/root")

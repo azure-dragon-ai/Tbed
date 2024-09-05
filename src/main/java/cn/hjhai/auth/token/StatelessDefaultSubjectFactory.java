@@ -1,11 +1,11 @@
-package cn.hellohao.auth.token;
+package cn.hjhai.auth.token;
 
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.subject.SubjectContext;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
  * @date 2021/6/15 17:30
  */

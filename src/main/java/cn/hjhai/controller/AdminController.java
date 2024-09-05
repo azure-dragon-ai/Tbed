@@ -1,20 +1,22 @@
-package cn.hellohao.controller;
+package cn.hjhai.controller;
 
-import cn.hellohao.config.SysName;
-import cn.hellohao.pojo.*;
-import cn.hellohao.pojo.vo.PageResultBean;
-import cn.hellohao.service.*;
-import cn.hellohao.service.impl.AlbumServiceImpl;
-import cn.hellohao.service.impl.UserServiceImpl;
-import cn.hellohao.service.impl.deleImages;
-import cn.hellohao.utils.SetFiles;
-import cn.hellohao.utils.SetText;
-import cn.hellohao.utils.progress.MyProgress;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+
+import cn.hjhai.config.SysName;
+import cn.hjhai.pojo.*;
+import cn.hjhai.pojo.vo.PageResultBean;
+import cn.hjhai.service.*;
+import cn.hjhai.service.impl.AlbumServiceImpl;
+import cn.hjhai.service.impl.UserServiceImpl;
+import cn.hjhai.service.impl.deleImages;
+import cn.hjhai.utils.SetFiles;
+import cn.hjhai.utils.SetText;
+import cn.hjhai.utils.progress.MyProgress;
+
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
@@ -30,9 +32,9 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019-07-17 14:22
+ * @date 2023-07-17 14:22
  */
 @Controller
 @RequestMapping("/admin")

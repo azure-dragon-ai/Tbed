@@ -1,6 +1,5 @@
-package cn.hellohao.auth.token;
+package cn.hjhai.auth.token;
 
-import cn.hellohao.pojo.User;
 import com.alibaba.fastjson.JSONObject;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
@@ -8,11 +7,13 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.TokenExpiredException;
 import com.auth0.jwt.interfaces.DecodedJWT;
 
+import cn.hjhai.pojo.User;
+
 import java.util.Calendar;
 import java.util.Date;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
  * @date 2021/6/11 18:50
  */

@@ -1,16 +1,18 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.config.GlobalConstant;
-import cn.hellohao.dao.KeysMapper;
-import cn.hellohao.dao.UploadConfigMapper;
-import cn.hellohao.dao.UserMapper;
-import cn.hellohao.pojo.*;
-import cn.hellohao.service.ConfdataService;
-import cn.hellohao.service.ImgTempService;
-import cn.hellohao.service.SysConfigService;
-import cn.hellohao.utils.*;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+
+import cn.hjhai.config.GlobalConstant;
+import cn.hjhai.dao.KeysMapper;
+import cn.hjhai.dao.UploadConfigMapper;
+import cn.hjhai.dao.UserMapper;
+import cn.hjhai.pojo.*;
+import cn.hjhai.service.ConfdataService;
+import cn.hjhai.service.ImgTempService;
+import cn.hjhai.service.SysConfigService;
+import cn.hjhai.utils.*;
+
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
@@ -33,7 +35,7 @@ import java.util.*;
 import java.util.concurrent.CompletableFuture;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
  * @date 2020/1/9 15:46
  */

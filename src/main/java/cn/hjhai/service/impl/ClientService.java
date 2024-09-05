@@ -1,12 +1,14 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.dao.*;
-import cn.hellohao.pojo.*;
-import cn.hellohao.service.ConfdataService;
-import cn.hellohao.service.ImgTempService;
-import cn.hellohao.service.SysConfigService;
-import cn.hellohao.utils.*;
 import com.alibaba.fastjson.JSONObject;
+
+import cn.hjhai.dao.*;
+import cn.hjhai.pojo.*;
+import cn.hjhai.service.ConfdataService;
+import cn.hjhai.service.ImgTempService;
+import cn.hjhai.service.SysConfigService;
+import cn.hjhai.utils.*;
+
 import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +25,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
  * @date 2021/10/28 16:38
  */

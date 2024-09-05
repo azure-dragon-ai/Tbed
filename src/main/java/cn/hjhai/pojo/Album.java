@@ -1,9 +1,9 @@
-package cn.hellohao.pojo;
+package cn.hjhai.pojo;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019-12-18 22:13
+ * @date 2023-12-18 22:13
  */
 public class Album {
     private String  albumkey;

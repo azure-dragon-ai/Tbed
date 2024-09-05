@@ -1,15 +1,16 @@
-package cn.hellohao.service;
+package cn.hjhai.service;
 
-import cn.hellohao.pojo.Images;
-import cn.hellohao.pojo.ImgAndAlbum;
 import org.springframework.stereotype.Service;
+
+import cn.hjhai.pojo.Images;
+import cn.hjhai.pojo.ImgAndAlbum;
 
 import java.util.List;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019-12-18 22:29
+ * @date 2023-12-18 22:29
  */
 @Service
 public interface ImgAndAlbumService {

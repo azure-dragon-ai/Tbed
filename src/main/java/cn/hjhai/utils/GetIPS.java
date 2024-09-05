@@ -1,12 +1,13 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
-import cn.hellohao.service.impl.ImgServiceImpl;
 import javax.servlet.http.HttpServletRequest;
 
+import cn.hjhai.service.impl.ImgServiceImpl;
+
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/11/6 17:35
+ * @date 2023/11/6 17:35
  */
 public class GetIPS implements Runnable {
     private String imgname ;

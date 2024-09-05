@@ -1,9 +1,9 @@
-package cn.hellohao.auth.filter;
+package cn.hjhai.auth.filter;
 
-import cn.hellohao.auth.token.JWTUtil;
-import cn.hellohao.pojo.User;
-import cn.hellohao.service.impl.UserServiceImpl;
-import cn.hellohao.utils.SpringContextHolder;
+import cn.hjhai.auth.token.JWTUtil;
+import cn.hjhai.pojo.User;
+import cn.hjhai.service.impl.UserServiceImpl;
+import cn.hjhai.utils.SpringContextHolder;
 import cn.hutool.crypto.SecureUtil;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.shiro.SecurityUtils;
@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
  * @date 2021/6/16 17:43
  */

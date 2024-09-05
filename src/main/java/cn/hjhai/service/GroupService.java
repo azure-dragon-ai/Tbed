@@ -1,15 +1,16 @@
-package cn.hellohao.service;
+package cn.hjhai.service;
 
-import cn.hellohao.pojo.Group;
-import cn.hellohao.pojo.Msg;
 import org.springframework.stereotype.Service;
+
+import cn.hjhai.pojo.Group;
+import cn.hjhai.pojo.Msg;
 
 import java.util.List;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/8/19 16:29
+ * @date 2023/8/19 16:29
  */
 @Service
 public interface GroupService {

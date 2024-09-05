@@ -1,6 +1,6 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
-import cn.hellohao.config.GlobalConstant;
+import cn.hjhai.config.GlobalConstant;
 import cn.hutool.core.io.FileUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -16,9 +16,9 @@ import java.util.Properties;
 import java.util.UUID;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/11/29 14:32
+ * @date 2023/11/29 14:32
  */
 @Configuration
 public class FirstRun implements InitializingBean {

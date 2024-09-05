@@ -1,16 +1,17 @@
-package cn.hellohao.dao;
+package cn.hjhai.dao;
 
-import cn.hellohao.pojo.Images;
-import cn.hellohao.pojo.ImgAndAlbum;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+
+import cn.hjhai.pojo.Images;
+import cn.hjhai.pojo.ImgAndAlbum;
 
 import java.util.List;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019-12-18 22:15
+ * @date 2023-12-18 22:15
  */
 @Mapper
 public interface ImgAndAlbumMapper {

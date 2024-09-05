@@ -1,22 +1,23 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.dao.GroupMapper;
-import cn.hellohao.dao.UserMapper;
-import cn.hellohao.exception.CodeException;
-import cn.hellohao.pojo.Group;
-import cn.hellohao.pojo.Msg;
-import cn.hellohao.pojo.User;
-import cn.hellohao.service.GroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import cn.hjhai.dao.GroupMapper;
+import cn.hjhai.dao.UserMapper;
+import cn.hjhai.exception.CodeException;
+import cn.hjhai.pojo.Group;
+import cn.hjhai.pojo.Msg;
+import cn.hjhai.pojo.User;
+import cn.hjhai.service.GroupService;
+
 import java.util.List;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/8/19 16:30
+ * @date 2023/8/19 16:30
  */
 @Service
 public class GroupServiceImpl implements GroupService {

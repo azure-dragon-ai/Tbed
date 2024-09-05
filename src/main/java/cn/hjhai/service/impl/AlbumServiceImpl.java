@@ -1,14 +1,16 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.dao.AlbumMapper;
-import cn.hellohao.dao.ImgAndAlbumMapper;
-import cn.hellohao.dao.ImgMapper;
-import cn.hellohao.exception.CodeException;
-import cn.hellohao.pojo.Album;
-import cn.hellohao.pojo.Images;
-import cn.hellohao.pojo.ImgAndAlbum;
-import cn.hellohao.service.AlbumService;
 import com.alibaba.fastjson.JSONArray;
+
+import cn.hjhai.dao.AlbumMapper;
+import cn.hjhai.dao.ImgAndAlbumMapper;
+import cn.hjhai.dao.ImgMapper;
+import cn.hjhai.exception.CodeException;
+import cn.hjhai.pojo.Album;
+import cn.hjhai.pojo.Images;
+import cn.hjhai.pojo.ImgAndAlbum;
+import cn.hjhai.service.AlbumService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,9 +18,9 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019-12-18 22:30
+ * @date 2023-12-18 22:30
  */
 @Service
 public class AlbumServiceImpl implements AlbumService {

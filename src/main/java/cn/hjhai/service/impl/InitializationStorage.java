@@ -1,9 +1,5 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.auth.filter.SubjectFilter;
-import cn.hellohao.dao.KeysMapper;
-import cn.hellohao.pojo.Keys;
-import cn.hellohao.utils.Print;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,13 +8,18 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+import cn.hjhai.auth.filter.SubjectFilter;
+import cn.hjhai.dao.KeysMapper;
+import cn.hjhai.pojo.Keys;
+import cn.hjhai.utils.Print;
+
 import java.lang.management.ManagementFactory;
 import java.util.List;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/8/28 15:33
+ * @date 2023/8/28 15:33
  */
 
 @Component
@@ -67,7 +68,7 @@ public class InitializationStorage implements CommandLineRunner {
 
     public void sout(){
         Print.Normal("______________________________________________");
-        Print.Normal("              Hellohao Tbed                ");
+        Print.Normal("              HjhAI Image                ");
         Print.Normal("     Successful startup of the program      ");
         Print.Normal("     is OK!  Open http:// yourIP:port       ");
         Print.Normal("______________________________________________");

@@ -1,15 +1,16 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.dao.SysConfigMapper;
-import cn.hellohao.pojo.SysConfig;
-import cn.hellohao.service.SysConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import cn.hjhai.dao.SysConfigMapper;
+import cn.hjhai.pojo.SysConfig;
+import cn.hjhai.service.SysConfigService;
+
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/8/15 13:48
+ * @date 2023/8/15 13:48
  */
 @Service
 public class SysConfigServiceImpl implements SysConfigService {

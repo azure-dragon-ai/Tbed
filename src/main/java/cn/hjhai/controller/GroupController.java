@@ -1,11 +1,13 @@
-package cn.hellohao.controller;
+package cn.hjhai.controller;
 
-import cn.hellohao.pojo.Group;
-import cn.hellohao.pojo.Msg;
-import cn.hellohao.service.GroupService;
 import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+
+import cn.hjhai.pojo.Group;
+import cn.hjhai.pojo.Msg;
+import cn.hjhai.service.GroupService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,9 +18,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/8/19 16:35
+ * @date 2023/8/19 16:35
  */
 @Controller
 @RequestMapping("/admin/root")

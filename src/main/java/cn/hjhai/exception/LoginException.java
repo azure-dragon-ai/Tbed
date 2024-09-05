@@ -1,9 +1,9 @@
-package cn.hellohao.exception;
+package cn.hjhai.exception;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/8/7 9:02
+ * @date 2023/8/7 9:02
  */
 public class LoginException extends RuntimeException {
     public LoginException() {

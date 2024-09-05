@@ -1,9 +1,9 @@
-package cn.hellohao.pojo;
+package cn.hjhai.pojo;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019-08-11 14:09
+ * @date 2023-08-11 14:09
  */
 public class Code {
     private Integer id;

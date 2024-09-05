@@ -1,4 +1,4 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * Spring的ApplicationContext的持有者,可以用静态方法的方式获取spring容器中的bean
- * @author Hellohao
+ * @author Peter Zhang
  * @date 2018年5月27日 下午6:32:11
  */
 @Component

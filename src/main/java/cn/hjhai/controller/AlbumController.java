@@ -1,14 +1,16 @@
-package cn.hellohao.controller;
+package cn.hjhai.controller;
 
-import cn.hellohao.pojo.*;
-import cn.hellohao.pojo.vo.PageResultBean;
-import cn.hellohao.service.ImgAndAlbumService;
-import cn.hellohao.service.UserService;
-import cn.hellohao.service.impl.AlbumServiceImpl;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+
+import cn.hjhai.pojo.*;
+import cn.hjhai.pojo.vo.PageResultBean;
+import cn.hjhai.service.ImgAndAlbumService;
+import cn.hjhai.service.UserService;
+import cn.hjhai.service.impl.AlbumServiceImpl;
+
 import org.apache.commons.text.StringEscapeUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
@@ -22,9 +24,9 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/12/17 11:25
+ * @date 2023/12/17 11:25
  */
 @Controller
 public class AlbumController {

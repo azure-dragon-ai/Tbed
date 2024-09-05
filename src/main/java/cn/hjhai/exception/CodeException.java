@@ -1,9 +1,9 @@
-package cn.hellohao.exception;
+package cn.hjhai.exception;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/8/14 10:19
+ * @date 2023/8/14 10:19
  */
 public class CodeException extends RuntimeException {
 

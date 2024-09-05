@@ -1,18 +1,19 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
-import cn.hellohao.exception.StorageSourceInitException;
-import cn.hellohao.pojo.ReturnImage;
-import cn.hellohao.service.impl.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import cn.hjhai.exception.StorageSourceInitException;
+import cn.hjhai.pojo.ReturnImage;
+import cn.hjhai.service.impl.*;
 
 import java.io.File;
 import java.util.Map;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/11/7 17:12
+ * @date 2023/11/7 17:12
  */
 @Service
 public class GetSource {

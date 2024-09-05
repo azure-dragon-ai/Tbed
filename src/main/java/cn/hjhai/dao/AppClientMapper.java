@@ -1,11 +1,12 @@
-package cn.hellohao.dao;
+package cn.hjhai.dao;
 
-import cn.hellohao.pojo.AppClient;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+import cn.hjhai.pojo.AppClient;
+
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
  * @date 2022-06-10 18:33
  */

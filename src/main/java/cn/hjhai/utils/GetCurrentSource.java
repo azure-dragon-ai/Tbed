@@ -1,23 +1,24 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
-import cn.hellohao.dao.UserMapper;
-import cn.hellohao.pojo.Group;
-import cn.hellohao.pojo.User;
-import cn.hellohao.pojo.UserGroup;
-import cn.hellohao.service.GroupService;
-import cn.hellohao.service.UserGroupService;
-import cn.hellohao.service.impl.GroupServiceImpl;
-import cn.hellohao.service.impl.UserGroupServiceImpl;
-import cn.hellohao.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import cn.hjhai.dao.UserMapper;
+import cn.hjhai.pojo.Group;
+import cn.hjhai.pojo.User;
+import cn.hjhai.pojo.UserGroup;
+import cn.hjhai.service.GroupService;
+import cn.hjhai.service.UserGroupService;
+import cn.hjhai.service.impl.GroupServiceImpl;
+import cn.hjhai.service.impl.UserGroupServiceImpl;
+import cn.hjhai.service.impl.UserServiceImpl;
 
 import javax.annotation.PostConstruct;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/8/20 14:10
+ * @date 2023/8/20 14:10
  */
 @Component
 public class GetCurrentSource {

@@ -1,9 +1,9 @@
-package cn.hellohao.exception;
+package cn.hjhai.exception;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/8/6 8:51
+ * @date 2023/8/6 8:51
  */
 //创建自定义异常
 //

@@ -1,18 +1,19 @@
-package cn.hellohao.auth.shiro;
+package cn.hjhai.auth.shiro;
 
-import cn.hellohao.auth.filter.SubjectFilter;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import cn.hjhai.auth.filter.SubjectFilter;
+
 import javax.servlet.Filter;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
  * @date 2021/6/3 10:37
  */

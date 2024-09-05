@@ -136,7 +136,7 @@
    
    ```
 
-2. 启动 Hellohao 服务
+2. 启动 HjhAI 服务
 
    ```shell
    docker-compose up -d

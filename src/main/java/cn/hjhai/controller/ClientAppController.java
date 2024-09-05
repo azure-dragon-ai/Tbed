@@ -1,17 +1,19 @@
-package cn.hellohao.controller;
+package cn.hjhai.controller;
 
-import cn.hellohao.auth.token.JWTUtil;
-import cn.hellohao.pojo.Msg;
-import cn.hellohao.pojo.UploadConfig;
-import cn.hellohao.pojo.User;
-import cn.hellohao.service.AppClientService;
-import cn.hellohao.service.ImgService;
-import cn.hellohao.service.UploadConfigService;
-import cn.hellohao.service.impl.UploadServicel;
-import cn.hellohao.service.impl.UserServiceImpl;
-import cn.hellohao.utils.Base64ToMultipartFile;
-import cn.hellohao.utils.SetFiles;
 import com.alibaba.fastjson.JSONObject;
+
+import cn.hjhai.auth.token.JWTUtil;
+import cn.hjhai.pojo.Msg;
+import cn.hjhai.pojo.UploadConfig;
+import cn.hjhai.pojo.User;
+import cn.hjhai.service.AppClientService;
+import cn.hjhai.service.ImgService;
+import cn.hjhai.service.UploadConfigService;
+import cn.hjhai.service.impl.UploadServicel;
+import cn.hjhai.service.impl.UserServiceImpl;
+import cn.hjhai.utils.Base64ToMultipartFile;
+import cn.hjhai.utils.SetFiles;
+
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +24,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
  * @date 2022-05-16 32:45
  */

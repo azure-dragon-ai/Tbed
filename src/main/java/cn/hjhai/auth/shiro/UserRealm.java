@@ -1,8 +1,5 @@
-package cn.hellohao.auth.shiro;
+package cn.hjhai.auth.shiro;
 
-import cn.hellohao.pojo.User;
-import cn.hellohao.service.UserService;
-import cn.hellohao.utils.SetText;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -12,10 +9,14 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import cn.hjhai.pojo.User;
+import cn.hjhai.service.UserService;
+import cn.hjhai.utils.SetText;
+
 import java.util.ArrayList;
 
 /*
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
  * @date 2021/6/3 10:39
  * 自定义UserRealm

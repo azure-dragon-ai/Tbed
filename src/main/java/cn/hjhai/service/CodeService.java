@@ -1,15 +1,16 @@
-package cn.hellohao.service;
+package cn.hjhai.service;
 
-import cn.hellohao.pojo.Code;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
+
+import cn.hjhai.pojo.Code;
 
 import java.util.List;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019-08-11 14:20
+ * @date 2023-08-11 14:20
  */
 @Service
 public interface CodeService {

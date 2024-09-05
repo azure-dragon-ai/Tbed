@@ -1,4 +1,4 @@
-package cn.hellohao.auth.filter;
+package cn.hjhai.auth.filter;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -14,7 +14,7 @@ import java.util.Collections;
 /**
  * 跨域请求过滤器
  *
- * @author Hellohao
+ * @author Peter Zhang
  * @date 2021/6/10
  */
 @Configuration

@@ -1,12 +1,13 @@
-package cn.hellohao.dao;
+package cn.hjhai.dao;
 
-import cn.hellohao.pojo.SysConfig;
 import org.apache.ibatis.annotations.Mapper;
 
+import cn.hjhai.pojo.SysConfig;
+
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/8/15 13:33
+ * @date 2023/8/15 13:33
  */
 @Mapper
 public interface SysConfigMapper {

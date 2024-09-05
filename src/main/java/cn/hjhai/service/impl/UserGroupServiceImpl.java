@@ -1,15 +1,16 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.dao.UserGroupMapper;
-import cn.hellohao.pojo.UserGroup;
-import cn.hellohao.service.UserGroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import cn.hjhai.dao.UserGroupMapper;
+import cn.hjhai.pojo.UserGroup;
+import cn.hjhai.service.UserGroupService;
+
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
- * @date 2019/8/20 14:13
+ * @date 2023/8/20 14:13
  */
 @Service
 public class UserGroupServiceImpl implements UserGroupService {

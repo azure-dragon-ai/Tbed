@@ -1,7 +1,7 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
 /**
- * @author Hellohao
+ * @author Peter Zhang
  * @version 1.0
  * @date 2022/7/18 9:49
  */
