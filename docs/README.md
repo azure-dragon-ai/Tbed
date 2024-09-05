@@ -70,29 +70,19 @@ mysql -h10.0.0.13 -uleona -P3306 -p
 leona123456
 
 http://152.136.174.88:8081/
-https://ai2.wepromo.cn
+https://ai3.wepromo.cn
 
 npm install -g cnpm --registry=https://registry.npmmirror.com
 
-cd ui-admin
-#cnpm install
-npm install
-npm run dev
-npm run build:prod
-
-https://ai2-1.wepromo.cn
-admin
-123456
-
-https://ai2-2.wepromo.cn
-test
-123456
-
-cd ui-client
-#cnpm install
-npm install
+cd tbed-web
+cnpm install --save-dev webpack-bundle-analyzer
+cnpm install
 npm run serve
 npm run build
+
+https://ai3-1.wepromo.cn
+admin
+admin
 
 sudo docker rmi `docker images | grep none | awk '{print $3}'`
 ```
