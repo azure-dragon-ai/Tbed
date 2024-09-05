@@ -43,7 +43,7 @@ public class PoolConfig {
         private int maxPoolSize = 50;
         private int keepAliveTime = 15;
         private int queueCapacity = 10;
-        private String threadNamePrefix = "Tbed-Thread";
+        private String threadNamePrefix = "Timage-Thread";
         private boolean allowCoreThreadTimeout = false;
         private boolean waitForTasksToCompleteOnShutdown = false;
         private int awaitTerminationSeconds;
