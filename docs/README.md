@@ -48,7 +48,7 @@ grant all privileges on leona.* to 'leona'@'%';
 flush privileges;
 
 mysqldump -h127.0.0.1 -uroot -P3306 -p leona > leona20240606.sql
-mysql -h127.0.0.1 -uroot -P3310 -p leona_tbed < ../_doc/sql/db_hugai.sql
+mysql -h127.0.0.1 -uroot -P3310 -p leona_tbed < ../sql/tbed.sql
 
 redis-cli -h 127.0.0.1 -p 6380
 auth default leona123456
