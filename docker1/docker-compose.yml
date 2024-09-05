@@ -12,7 +12,4 @@ services:
       - ./leona/logs:/logs
       - ./leona/backup:/backup
       - /etc/localtime:/etc/localtime
-    depends_on:
-      - leona-mysql80
-      - leona-redis
     restart: always

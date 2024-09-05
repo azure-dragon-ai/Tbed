@@ -1,9 +1,8 @@
 ```shell
 mvn clean package
-cp modules-business/target/modules-business-1.0.0.jar docker/leona-fe/leona.jar
-cp module-common/target/module-common-1.0.0.jar docker/leona-fe/module-common-1.0.0.jar
-cp docker/leona/application.yml docker/leona-fe/
-cp docker/leona/Dockerfile docker/leona-fe/
+cp target/Tbed-2.0-Free.jar docker1/leona-fe/leona.jar
+cp docker1/leona/application.properties docker1/leona-fe/
+cp docker1/leona/Dockerfile docker1/leona-fe/
 
 sudo docker compose build
 sudo docker compose down
