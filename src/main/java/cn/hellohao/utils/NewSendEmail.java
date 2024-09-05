@@ -73,8 +73,8 @@ public class NewSendEmail {
             props.put("mail.smtp.port", emailConfig.getPort());//465  25
             props.put("mail.smtp.host", emailConfig.getEmailurl());
             OhMyEmail.config(props, emailConfig.getEmails(), emailConfig.getEmailkey());
-            String webname="Hellohao图像托管程序";
-            OhMyEmail.subject("Hellohao图像托管程序邮箱配置测试")
+            String webname="Hjh图像托管程序";
+            OhMyEmail.subject("Hjh图像托管程序邮箱配置测试")
                     .from(webname)
                     .to(toEmail)
                     .html("<p>这是一条测试邮件，当您收到此邮件证明测试成功了</p>")

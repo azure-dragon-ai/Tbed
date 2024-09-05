@@ -1,4 +1,4 @@
-# Hellohao图像托管 - 也许这会是最优秀的图像托管程序
+# Hjh图像托管 - 也许这会是最优秀的图像托管程序
 
 <p align="center">
   <a href="https://www.hellohao.cn/" target="_blank">
@@ -21,7 +21,7 @@
 
 ### 前言
 
-**Hellohao图像托管程序**(图床)这是一个由JAVA语言编写SpringBoot框架开发的开源图像托管程序。具备多对象存储源对接，采用`前后端分离`式设计的一款专门托管图像的程序，支持多种格式的图像 多功能的图床系统。该程序支持除了`web端`之外，同时支持`客户端（win/mac）`,`移动端（小程序）`等常用全平台支持。
+**Hjh图像托管程序**(图床)这是一个由JAVA语言编写SpringBoot框架开发的开源图像托管程序。具备多对象存储源对接，采用`前后端分离`式设计的一款专门托管图像的程序，支持多种格式的图像 多功能的图床系统。该程序支持除了`web端`之外，同时支持`客户端（win/mac）`,`移动端（小程序）`等常用全平台支持。
 
 程序主要使用领域：`个人照片存储`，`团队共享图像`，`博客/商城等网站图片托管`，`图像批量云分享`等。具备优秀的多用户图像上传功能和完善的图像查询管理逻辑，同时支持对接多家对象存储。
 
@@ -178,7 +178,7 @@
 > 仅适用于对接`Core付费版`，开源版暂不可对接使用。
 > 获取地址：[官网获取](https://www.hellohao.cn/pay)
 
-![Hellohao图像托管](https://tbed.hellohao.cn/newassets/img/twechat.png)
+![Hjh图像托管](https://tbed.hellohao.cn/newassets/img/twechat.png)
 
 ### 运行环境
 
@@ -205,7 +205,7 @@
 - Shiro
 
 ### 声明
-Hellohao图像托管已申请[**中国国家版权局计算机软件著作权**](https://register.ccopyright.com.cn/query.html)登记，受法律法规保护。
+Hjh图像托管已申请[**中国国家版权局计算机软件著作权**](https://register.ccopyright.com.cn/query.html)登记，受法律法规保护。
 > 登记号：2023SR1210640
 
 本项目遵循[GNU Affero General Public License v3.0](https://choosealicense.com/licenses/agpl-3.0/#)开源协议，使用前请悉知。
@@ -221,5 +221,5 @@ Hellohao图像托管已申请[**中国国家版权局计算机软件著作权**]
 ### 更多
 
 **如需程序定制或其他业务，请与我们取得联系**
-[Hellohao图像托管官网](http://hellohao.cn)
+[Hjh图像托管官网](http://hellohao.cn)
 
