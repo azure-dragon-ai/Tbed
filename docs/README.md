@@ -37,7 +37,7 @@ curl 'myip.ipip.net'
 mysql -h127.0.0.1 -uroot -P3310 -p
 leona123456
 
-create database leona default character set utf8mb4 collate utf8mb4_unicode_ci;
+create database leona_tbed default character set utf8mb4 collate utf8mb4_unicode_ci;
 
 create user 'leona'@'127.0.0.1' identified by 'leona123456';
 grant all privileges on leona.* to 'leona'@'127.0.0.1';
@@ -48,9 +48,7 @@ grant all privileges on leona.* to 'leona'@'%';
 flush privileges;
 
 mysqldump -h127.0.0.1 -uroot -P3306 -p leona > leona20240606.sql
-mysql -h127.0.0.1 -uroot -P3310 -p leona < ../_doc/sql/db_hugai.sql
-mysql -h10.0.0.13 -uroot -P3306 -p
-mysql -h10.0.0.13 -uroot -P3306 -p leona < leona20240606.sql
+mysql -h127.0.0.1 -uroot -P3310 -p leona_tbed < ../_doc/sql/db_hugai.sql
 
 redis-cli -h 127.0.0.1 -p 6380
 auth default leona123456
