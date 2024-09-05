@@ -1,0 +1,40 @@
+version: "3"
+services:
+  tbed-free:
+    # 具体版本号需要填写目前发行的最新版本
+    image: hellohao/tbed-free:2023xxxx
+    networks:
+      hellohao_network:
+    ports:
+      - "10088:10088"
+      - "10089:10089"
+    volumes:
+      - /HellohaoData/:/HellohaoData/
+    environment:
+      MYSQL_URL: jdbc:mysql://hellohaodb/tbed?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+      # 数据库用户名（一般使用本镜像数据库无需修改，如果使用外部三方数据库自行修改自己的用户名）
+      MYSQL_USERNAME: root
+      # 自定设置一个MySQL的密码，请保证与下方 POSTGRES_PASSWORD 的变量值一致
+      MYSQL_PASS: tIaNGg@SHa&hIo56
+      # 前端域名(反代10089端口的域名)
+      HELLOHAO_WEB_HOST: http://pic.example.com
+      # 后端域名(反代10088端口的域名)
+      HELLOHAO_SERVER_HOST: http://server.example.com
+  hellohaodb:
+    image: hellohao/mysql-free:1.0
+    networks:
+      hellohao_network:
+    command:
+      - --default-authentication-plugin=mysql_native_password
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_general_ci
+      - --explicit_defaults_for_timestamp=true
+    ports:
+      - "3307:3306"
+    volumes:
+      - /HellohaoData/mysql:/var/lib/mysql
+    environment:
+      # MySQL的密码
+      MYSQL_ROOT_PASSWORD: tIaNGg@SHa&hIo56
+networks:
+  hellohao_network:
