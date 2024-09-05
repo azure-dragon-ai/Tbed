@@ -1,6 +1,6 @@
 package cn.hjhai.utils;
 
-import cn.hjhai.TbedApplication;
+import cn.hjhai.TimageApplication;
 import cn.hjhai.pojo.Msg;
 import org.apache.commons.lang3.StringUtils;
 
