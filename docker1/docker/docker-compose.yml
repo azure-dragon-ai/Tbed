@@ -1,0 +1,18 @@
+version: '3'
+services:
+  leona-tbed:
+    build:
+      context: leona-fe
+      dockerfile: Dockerfile
+    container_name: leona-fe
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./leona/storage:/storage
+      - ./leona/logs:/logs
+      - ./leona/backup:/backup
+      - /etc/localtime:/etc/localtime
+    depends_on:
+      - leona-mysql80
+      - leona-redis
+    restart: always

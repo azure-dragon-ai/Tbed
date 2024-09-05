@@ -9,8 +9,9 @@ import java.io.File;
  */
 public class GlobalConstant {
     public static String SYSTYPE = "LINUX";
-    public static String LOCPATH = File.separator + "HellohaoData";
+    public static String LOCPATH = File.separator + "storage";
 
-    public static final String HELLOHAOTEMPIMG_PATH = File.separator + "HellohaoData"+File.separator+"hellohaotempimg";
+    public static final String LEONATEMPIMG_PATH = File.separator + "storage" + File.separator
+            + "hellohaotempimg";
 
 }

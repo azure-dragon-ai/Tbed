@@ -271,12 +271,12 @@ public class UploadServicel {
                     jsonArray.add(calssif[i]);
                 }
             }
-            String path = GlobalConstant.HELLOHAOTEMPIMG_PATH+File.separator+uuid+File.separator+imgIdentifier+File.separator+filename;
+            String path = GlobalConstant.LEONATEMPIMG_PATH+File.separator+uuid+File.separator+imgIdentifier+File.separator+filename;
 //            if(new File(path).exists()){
-//                path = GlobalConstant.HELLOHAOTEMPIMG_PATH+File.separator+UUID.randomUUID().toString().replace("-", "").toLowerCase()+filename;
+//                path = GlobalConstant.LEONATEMPIMG_PATH+File.separator+UUID.randomUUID().toString().replace("-", "").toLowerCase()+filename;
 //            }
-            String folder = GlobalConstant.HELLOHAOTEMPIMG_PATH+File.separator+uuid+File.separator+imgIdentifier;
-            String delFolder = GlobalConstant.HELLOHAOTEMPIMG_PATH+File.separator+uuid;
+            String folder = GlobalConstant.LEONATEMPIMG_PATH+File.separator+uuid+File.separator+imgIdentifier;
+            String delFolder = GlobalConstant.LEONATEMPIMG_PATH+File.separator+uuid;
             String originalFilename = filename;
             if(StringUtils.isBlank(originalFilename)){
                 originalFilename = "未命名图像";

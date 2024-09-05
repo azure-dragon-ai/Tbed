@@ -111,9 +111,9 @@
          # 自定设置一个MySQL的密码，请保证与下方 POSTGRES_PASSWORD 的变量值一致
          MYSQL_PASS: tIaNGg@SHa&hIo56
          # 前端域名(反代10089端口的域名)
-         HELLOHAO_WEB_HOST: http://pic.example.com
+         LEONA_WEB_HOST: http://pic.example.com
          # 后端域名(反代10088端口的域名)
-         HELLOHAO_SERVER_HOST: http://server.example.com
+         LEONA_SERVER_HOST: http://server.example.com
      hellohaodb:
        image: hellohao/mysql-free:1.0
        networks:

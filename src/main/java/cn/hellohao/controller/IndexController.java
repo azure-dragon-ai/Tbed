@@ -38,16 +38,26 @@ import java.util.concurrent.CompletableFuture;
 
 @Controller
 public class IndexController {
-    @Autowired private ImgService imgService;
-    @Autowired private SysConfigService sysConfigService;
-    @Autowired private ConfdataService confdataService;
-    @Autowired private UploadConfigService uploadConfigService;
-    @Autowired private UploadServicel uploadServicel;
-    @Autowired private deleImages deleimages;
-    @Autowired private IRedisService iRedisService;
-    @Autowired private AppClientService appClientService;
-    @Autowired private WebDAVImageupload webDAVImageupload;
-    public static String version =  "20240319";
+    @Autowired
+    private ImgService imgService;
+    @Autowired
+    private SysConfigService sysConfigService;
+    @Autowired
+    private ConfdataService confdataService;
+    @Autowired
+    private UploadConfigService uploadConfigService;
+    @Autowired
+    private UploadServicel uploadServicel;
+    @Autowired
+    private deleImages deleimages;
+    @Autowired
+    private IRedisService iRedisService;
+    @Autowired
+    private AppClientService appClientService;
+    @Autowired
+    private WebDAVImageupload webDAVImageupload;
+    public static String version = "20240319";
+
     @RequestMapping(value = "/")
     public String Welcome(Model model, HttpServletRequest httpServletRequest) {
         model.addAttribute("name", "服务端程序(开源版)");
@@ -68,8 +78,8 @@ public class IndexController {
         JSONObject jsonObject = new JSONObject();
         AppClient appClient = appClientService.getAppClientData("app");
         jsonObject.put("webname", cd.getString("webname"));
-        jsonObject.put("systype","free");
-        jsonObject.put("version",version);
+        jsonObject.put("systype", "free");
+        jsonObject.put("version", version);
         jsonObject.put("websubtitle", cd.getString("websubtitle"));
         jsonObject.put("keywords", cd.getString("keywords"));
         jsonObject.put("webms", cd.getString("webms"));
@@ -85,23 +95,25 @@ public class IndexController {
         jsonObject.put("clientname", appClient.getAppname());
         jsonObject.put("clientlogo", appClient.getApplogo());
         jsonObject.put("appupdate", appClient.getAppupdate());
-        jsonObject.put("serverVersion",version);
+        jsonObject.put("serverVersion", version);
         msg.setData(jsonObject);
         return msg;
     }
-    @PostMapping(value = {"/uploadChunkFile","/client/uploadChunkFile"})
+
+    @PostMapping(value = { "/uploadChunkFile", "/client/uploadChunkFile" })
     @ResponseBody
     @CrossOrigin
-    public Msg uploadChunk(HttpServletRequest request,Chunk chunk) {
+    public Msg uploadChunk(HttpServletRequest request, Chunk chunk) {
         Msg msg = new Msg();
         MultipartFile file = chunk.getFile();
         try {
             byte[] bytes = file.getBytes();
-            Path path = Paths.get(SetFiles.generatePath(GlobalConstant.HELLOHAOTEMPIMG_PATH+ File.separator+chunk.getUuid(), chunk));
+            Path path = Paths.get(SetFiles
+                    .generatePath(GlobalConstant.LEONATEMPIMG_PATH + File.separator + chunk.getUuid(), chunk));
             java.nio.file.Files.write(path, bytes);
             JSONObject jsonObject = new JSONObject();
-            jsonObject.put("chunkNumber",chunk.getChunkNumber());
-            jsonObject.put("totalChunks",chunk.getTotalChunks());
+            jsonObject.put("chunkNumber", chunk.getChunkNumber());
+            jsonObject.put("totalChunks", chunk.getTotalChunks());
             msg.setData(jsonObject);
             msg.setCode("200");
             return msg;
@@ -112,41 +124,41 @@ public class IndexController {
         }
     }
 
-    @PostMapping(value = {"/processFile","/client/processFile"})
+    @PostMapping(value = { "/processFile", "/client/processFile" })
     @ResponseBody
     @CrossOrigin
-    public Msg processFile(HttpServletRequest request,@RequestParam(value = "data", defaultValue = "") String data){
+    public Msg processFile(HttpServletRequest request, @RequestParam(value = "data", defaultValue = "") String data) {
         Msg msg = new Msg();
-        try{
+        try {
             Subject subject = SecurityUtils.getSubject();
             User user = (User) subject.getPrincipal();
-            CompletableFuture<Msg> ret = uploadServicel.mergeFile(request,data,user);
+            CompletableFuture<Msg> ret = uploadServicel.mergeFile(request, data, user);
             msg = ret.get();
-        }catch (Exception e){
+        } catch (Exception e) {
             msg.setCode("500");
             msg.setInfo("处理文件错误，上传失败");
         }
         return msg;
     }
 
-    @PostMapping(value = {"/upload", "/client/upload"})
+    @PostMapping(value = { "/upload", "/client/upload" })
     @ResponseBody
     public Msg upimg(
             HttpServletRequest request,
             @RequestParam(value = "file", required = false) MultipartFile multipartFile,
-            Integer day,@RequestParam(value = "md5",required = false) String md5) {
+            Integer day, @RequestParam(value = "md5", required = false) String md5) {
         JSONArray jsonArray = new JSONArray();
         Subject subject = SecurityUtils.getSubject();
         User user = (User) subject.getPrincipal();
         String originalFilename = multipartFile.getOriginalFilename();
-        if(StringUtils.isBlank(originalFilename)){
+        if (StringUtils.isBlank(originalFilename)) {
             originalFilename = "未命名图像";
         }
         File file = SetFiles.changeFile_new(multipartFile);
-        return uploadServicel.uploadForLoc(request, file,originalFilename, day, null,md5);
+        return uploadServicel.uploadForLoc(request, file, originalFilename, day, null, md5);
     }
 
-    @PostMapping(value = {"/uploadForUrl", "/client/uploadForUrl"})
+    @PostMapping(value = { "/uploadForUrl", "/client/uploadForUrl" })
     @ResponseBody
     public Msg upurlimg(
             HttpServletRequest request, @RequestParam(value = "data", defaultValue = "") String data) {
@@ -174,9 +186,9 @@ public class IndexController {
             int temp = i + 1;
             if (syscounts >= temp) {
                 JSONObject imgJson = new JSONObject();
-                imgJson.put("imgUrl",URLArr[i]);
-                imgJson.put("referer",referer);
-                Msg msg = uploadServicel.uploadForLoc(request, null,"URL转存图像", setday, imgJson,null);
+                imgJson.put("imgUrl", URLArr[i]);
+                imgJson.put("referer", referer);
+                Msg msg = uploadServicel.uploadForLoc(request, null, "URL转存图像", setday, imgJson, null);
                 if (!msg.getCode().equals("200")) {
                     errcounts++;
                 } else {
@@ -194,9 +206,10 @@ public class IndexController {
         return retMsg;
     }
 
-    //webdav本地托管
+    // webdav本地托管
     @GetMapping("/w/{shortuuid}")
-    public ResponseEntity<InputStreamResource> getNextcloudImage(HttpServletRequest request, @PathVariable("shortuuid") String shortuuid) {
+    public ResponseEntity<InputStreamResource> getNextcloudImage(HttpServletRequest request,
+            @PathVariable("shortuuid") String shortuuid) {
         ResponseEntity<InputStreamResource> webDAV = webDAVImageupload.getWebDAV(shortuuid);
         return webDAV;
 
@@ -239,9 +252,8 @@ public class IndexController {
             JSONObject tokenJson = JWTUtil.checkToken(token);
             if (tokenJson.getBoolean("check")) {
                 Subject subject = SecurityUtils.getSubject();
-                UsernamePasswordToken tokenOBJ =
-                        new UsernamePasswordToken(
-                                tokenJson.getString("email"), tokenJson.getString("password"));
+                UsernamePasswordToken tokenOBJ = new UsernamePasswordToken(
+                        tokenJson.getString("email"), tokenJson.getString("password"));
                 tokenOBJ.setRememberMe(true);
                 try {
                     subject.login(tokenOBJ);
@@ -335,7 +347,7 @@ public class IndexController {
         }
     }
 
-    @PostMapping(value = {"/verifyCodeFortowSendEmail","/wechat/verifyCodeFortowSendEmail"})
+    @PostMapping(value = { "/verifyCodeFortowSendEmail", "/wechat/verifyCodeFortowSendEmail" })
     @ResponseBody
     public Msg verifyCodeFortowSendEmail() {
         Msg msg = new Msg();
@@ -345,10 +357,10 @@ public class IndexController {
             captcha.setGenerator(new MathGenerator(1));
             String code = getVerifyCodeOperator(captcha.getCode());
             String uid = UUID.randomUUID().toString().replace("-", "").toLowerCase();
-            iRedisService.setValue("verifyCodeFortowSendEmail_"+uid,code);
+            iRedisService.setValue("verifyCodeFortowSendEmail_" + uid, code);
             JSONObject jsonObject = new JSONObject();
-            jsonObject.put("codeKey",uid);
-            jsonObject.put("codeImg",captcha.getImageBase64());
+            jsonObject.put("codeKey", uid);
+            jsonObject.put("codeImg", captcha.getImageBase64());
             msg.setData(jsonObject);
             return msg;
         } catch (Exception e) {
@@ -375,7 +387,7 @@ public class IndexController {
         }
     }
 
-    @PostMapping({"/deleImagesByUid", "/client/deleImagesByUid"})
+    @PostMapping({ "/deleImagesByUid", "/client/deleImagesByUid" })
     @ResponseBody
     public Msg deleImagesByUid(@RequestParam(value = "data", defaultValue = "") String data) {
         Msg msg = new Msg();
@@ -395,7 +407,7 @@ public class IndexController {
                 return msg;
             }
         }
-        msg = deleimages.dele(false,null, image.getId());
+        msg = deleimages.dele(false, null, image.getId());
         List<Long> Delids = (List<Long>) msg.getData();
         if (!Delids.contains(image.getId())) {
             msg.setCode("500");
