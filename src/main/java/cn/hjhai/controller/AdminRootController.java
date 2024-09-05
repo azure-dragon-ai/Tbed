@@ -405,7 +405,7 @@ public class AdminRootController {
         JSONObject jsonObj = JSONObject.parseObject(data);
         String  dates = jsonObj.getString("dates");
         HashMap<String, Object> paramMap = new HashMap<>();
-        String urls = "http://check.hellohao.cn:8090/getNoticeText";
+        String urls = "http://check.wepromo.cn:8090/getNoticeText";
         JSONObject jsonObject =null;
         try {
             URL u = new URL(urls);

@@ -6,7 +6,7 @@ import java.net.URLConnection;
  
 public class TestUrl {
     //最好使用下面这个，上面那个超时时间不定，所以可能会导致卡住的情况
-//    testUrlWithTimeOut("http://tc.hellohao.cn2/getNoticeText", 2000);
+//    testUrlWithTimeOut("http://tc.wepromo.cn2/getNoticeText", 2000);
     public static void testUrl(String urlString){
         
         long lo = System.currentTimeMillis();

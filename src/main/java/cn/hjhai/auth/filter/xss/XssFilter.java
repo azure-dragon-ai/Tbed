@@ -7,7 +7,7 @@ import java.io.IOException;
 
 /**
  * XSS过滤器
- * @author hellohao
+ * @author Peter Zhang
  */
 @WebFilter(filterName="xssFilter",urlPatterns = { "/SaveForAlbum","/register" })//"/*"为所有请求
 public class XssFilter implements Filter {

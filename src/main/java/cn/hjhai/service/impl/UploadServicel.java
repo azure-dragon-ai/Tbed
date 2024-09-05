@@ -322,7 +322,7 @@ public class UploadServicel {
                 String savePath =
                         request.getSession().getServletContext().getRealPath("/")
                                 + File.separator
-                                + "hellohaotmp"
+                                + "hjhaitmp"
                                 + File.separator;
                 Map<String, Object> bl = ImgUrlUtil.downLoadFromUrl(url,referer, ShortUID, savePath);
                 if ((Boolean) bl.get("res") == true) {

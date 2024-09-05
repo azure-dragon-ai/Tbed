@@ -38,7 +38,7 @@ public class FirstRun implements InitializingBean {
     @Override
     public void afterPropertiesSet() {
         if (!DockerWebHost.contains("null")) {
-            contentToTxt("/hellohaotbed/webapps/hellohao/config.json", "{\"serverHost\": \"" + DockerWebHost + "\"}");
+            contentToTxt("/storage/config.json", "{\"serverHost\": \"" + DockerWebHost + "\"}");
         }
         isWindows();
         RunSqlScript.USERNAME = jdbcusername;
@@ -160,10 +160,10 @@ public class FirstRun implements InitializingBean {
     private String sql12 = "alter table leona_tbed.user add `token` varchar(255)";
     // 创建客户端程序相关表
     private String createAppclient = "CREATE TABLE `appclient`  (`id` varchar(10) NOT NULL,`isuse` varchar(10) NOT NULL,`winpackurl` varchar(255) NULL DEFAULT NULL,`macpackurl` varchar(255) NULL DEFAULT NULL,`appname` varchar(20) NULL,`applogo` varchar(255) NULL,`appupdate` varchar(10) NOT NULL) ";
-    private String instartAppclient = "INSERT INTO `appclient` VALUES ('app', 'on', NULL, NULL, 'Hjh图像托管', 'https://hellohao.nos-eastchina1.126.net/TbedClient/app.png', '1.0.1');";
+    private String instartAppclient = "INSERT INTO `appclient` VALUES ('app', 'on', NULL, NULL, 'Hjh图像托管', 'https://gaip-api.wepromo.cn/storage/images/standard_bg.jpg', '1.0.1');";
     // 创建confdata表
     private String createConfdata = "CREATE TABLE leona_tbed.confdata ( `key` varchar(100) NULL, jsondata LONGTEXT NULL )";
-    private String instartConfdata = "INSERT INTO leona_tbed.confdata VALUES ('config', '{\\\"sourcekey\\\":7,\\\"emails\\\":1,\\\"webname\\\":\\\"Hjh图床\\\",\\\"explain\\\":\\\"Hjh图像托管，即时分享你的美好瞬间。\\\",\\\"links\\\":\\\"<p style=\\\\\\\"color:#7c7c88;\\\\\\\">© 2024 <a href=\\\\\\\"https://www.wepromo.cn/\\\\\\\" target=\\\\\\\"_blank\\\\\\\" title=\\\\\\\"Hjh\\\\\\\">Hjh</a><span>  - All Rights Reserved</span> </p>\\\",\\\"notice\\\":\\\"也许...|这将是最好用的图床|为了更好的用户体验，建议您注册本站继续免费使用Hjh图床。本站不得上传任何形式的非法图片，一旦发现，永久删除并禁封账户。情节严重者将相关资料交于相关部门处理。\\\",\\\"domain\\\":\\\"https://testing.wepromo.cn\\\",\\\"background1\\\":\\\"\\\",\\\"sett\\\":\\\"1\\\",\\\"webms\\\":\\\"Hjh图像托管，是一家免费开源的图像托管，即时分享你的美好瞬间。\\\",\\\"webkeywords\\\":\\\"hellohao图床,图床,图片上传,开源图床,hellohao,图像托管，图片分享\\\",\\\"theme\\\":2,\\\"websubtitle\\\":\\\"这将是你用过最优秀的图像托管程序\\\",\\\"logo\\\":null,\\\"aboutinfo\\\":\\\"<img width=\\\\\\\"300px\\\\\\\" src=\\\\\\\"http://img.wwery.com/hellohao/rPscRYwz.png\\\\\\\">            <br />            <br />            <p>也许,这将是你用到最优秀的图像托管程序</p>            <p>本程序为Hellohao图象托管程序</p>            <br/>            <p style=\\\\\\\"color: #656565;\\\\\\\">作者：hellohao独立开发</p>            <p style=\\\\\\\"color: #656565;\\\\\\\">www.hellohao.cn</p>\\\"}');";
+    private String instartConfdata = "INSERT INTO leona_tbed.confdata VALUES ('config', '{\\\"sourcekey\\\":7,\\\"emails\\\":1,\\\"webname\\\":\\\"Hjh图床\\\",\\\"explain\\\":\\\"Hjh图像托管，即时分享你的美好瞬间。\\\",\\\"links\\\":\\\"<p style=\\\\\\\"color:#7c7c88;\\\\\\\">© 2024 <a href=\\\\\\\"https://www.wepromo.cn/\\\\\\\" target=\\\\\\\"_blank\\\\\\\" title=\\\\\\\"Hjh\\\\\\\">Hjh</a><span>  - All Rights Reserved</span> </p>\\\",\\\"notice\\\":\\\"也许...|这将是最好用的图床|为了更好的用户体验，建议您注册本站继续免费使用Hjh图床。本站不得上传任何形式的非法图片，一旦发现，永久删除并禁封账户。情节严重者将相关资料交于相关部门处理。\\\",\\\"domain\\\":\\\"https://testing.wepromo.cn\\\",\\\"background1\\\":\\\"\\\",\\\"sett\\\":\\\"1\\\",\\\"webms\\\":\\\"Hjh图像托管，是一家免费开源的图像托管，即时分享你的美好瞬间。\\\",\\\"webkeywords\\\":\\\"hjhai图床,图床,图片上传,开源图床,hjhai,图像托管，图片分享\\\",\\\"theme\\\":2,\\\"websubtitle\\\":\\\"这将是你用过最优秀的图像托管程序\\\",\\\"logo\\\":null,\\\"aboutinfo\\\":\\\"<img width=\\\\\\\"300px\\\\\\\" src=\\\\\\\"https://gaip-api.wepromo.cn/storage/images/standard_bg.jpg\\\\\\\">            <br />            <br />            <p>也许,这将是你用到最优秀的图像托管程序</p>            <p>本程序为Hellohao图象托管程序</p>            <br/>            <p style=\\\\\\\"color: #656565;\\\\\\\">作者：hjhai独立开发</p>            <p style=\\\\\\\"color: #656565;\\\\\\\">www.wepromo.cn</p>\\\"}');";
 
     private String index_imgdata = "ALTER TABLE imgdata ADD INDEX index_md5key_url ( id,md5key,imgname,imgurl,idname,imguid)";
 
@@ -171,8 +171,8 @@ public class FirstRun implements InitializingBean {
     private String compressed = "alter table imgdata row_format=compressed";
 
     private void clears() {
-        File file1 = new File(GlobalConstant.LOCPATH + File.separator + "hellohaotempimg");
-        File file2 = new File(GlobalConstant.LOCPATH + File.separator + "hellohaotempwatermarimg");
+        File file1 = new File(GlobalConstant.LOCPATH + File.separator + "hjhaitempimg");
+        File file2 = new File(GlobalConstant.LOCPATH + File.separator + "hjhaitempwatermarimg");
 
         // 判断目录有没有创建
         File file = new File(GlobalConstant.LOCPATH);

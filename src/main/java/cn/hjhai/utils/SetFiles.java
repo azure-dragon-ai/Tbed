@@ -56,7 +56,7 @@ public class SetFiles {
         // todo 修改临时文件文件名
         File file = null;
         try {
-            String new_FileName = System.getProperty("java.io.tmpdir")+"hellohao_tmp_upload"+File.separator+fileName;
+            String new_FileName = System.getProperty("java.io.tmpdir")+"hjhai_tmp_upload"+File.separator+fileName;
             file = new File(new_FileName);
             FileUtils.copyInputStreamToFile(multipartFile.getInputStream(), file);
         } catch (IOException e) {

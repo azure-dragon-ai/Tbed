@@ -12,6 +12,6 @@ public class GlobalConstant {
     public static String LOCPATH = File.separator + "storage";
 
     public static final String LEONATEMPIMG_PATH = File.separator + "storage" + File.separator
-            + "hellohaotempimg";
+            + "hjhaitempimg";
 
 }

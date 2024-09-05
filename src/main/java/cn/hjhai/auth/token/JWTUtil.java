@@ -20,7 +20,7 @@ import java.util.Date;
 public class JWTUtil {
 
     private static String EXPIRE_TIME = "";
-    private static String SECRET = "www.hellohao.cn";
+    private static String SECRET = "www.wepromo.cn";
 
     public static String createToken(User user){
         Calendar calendar = Calendar.getInstance();
