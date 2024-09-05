@@ -12,4 +12,10 @@ services:
       - ./leona/logs:/logs
       - ./leona/backup:/backup
       - /etc/localtime:/etc/localtime
+    networks:
+      - leona
     restart: always
+networks:
+  leona:
+    # driver: bridge
+    external: true
