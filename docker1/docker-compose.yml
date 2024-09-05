@@ -4,9 +4,9 @@ services:
     build:
       context: leona-fe
       dockerfile: Dockerfile
-    container_name: leona-fe
+    container_name: leona-tbed
     ports:
-      - "8080:8080"
+      - "8081:8081"
     volumes:
       - ./leona/storage:/storage
       - ./leona/logs:/logs
