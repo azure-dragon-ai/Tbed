@@ -129,21 +129,21 @@ public class FirstRun implements InitializingBean {
             RunSqlScript.RunInsert(sql9);
             Print.Normal("Add imgdata.shortlink");
         }
-        Integer ret10 = RunSqlScript.RunSelectCount(" select count(*) from tbed.keys where storageType='9'");
+        Integer ret10 = RunSqlScript.RunSelectCount(" select count(*) from leona_tbed.keys where storageType='9'");
         if (ret10 == 0) {
             RunSqlScript.RunInsert(sql10);
             Print.Normal("Add Webdav Config");
         }
         RunSqlScript.RunInsert(index_imgdata);
-        RunSqlScript.RunInsert("ALTER TABLE tbed.`user` MODIFY id int auto_increment;");
+        RunSqlScript.RunInsert("ALTER TABLE leona_tbed.`user` MODIFY id int auto_increment;");
         Print.Normal("Stage success");
 
         clears();
     }
 
     // 检查表是否存在，后边加'imgdata' and column_name = 'explains' 检查字段是否存在
-    private String isTableName = "SELECT count(table_name) FROM information_schema.TABLES WHERE TABLE_SCHEMA='tbed' and table_name =";
-    private String judgeTable = "select count(*) from information_schema.columns where TABLE_SCHEMA='tbed' and table_name = ";
+    private String isTableName = "SELECT count(table_name) FROM information_schema.TABLES WHERE TABLE_SCHEMA='leona_tbed' and table_name =";
+    private String judgeTable = "select count(*) from information_schema.columns where TABLE_SCHEMA='leona_tbed' and table_name = ";
     private String sql0 = "alter table `keys` add (Region varchar(255) DEFAULT null,RootPath varchar(255) DEFAULT '/');";
     private String sql1 = "select count(*) from information_schema.columns where table_name = 'uploadconfig' and column_name = 'blacklist'";
     private String sql2 = "alter table uploadconfig add blacklist varchar(500);";
@@ -155,15 +155,15 @@ public class FirstRun implements InitializingBean {
     private String sql8 = "alter table `imgdata` add brieflink varchar(100) DEFAULT null ;";
     private String sql9 = "alter table `imgdata` add shortlink varchar(100) DEFAULT null ;";
     // 图片标识名字段
-    private String sql10 = "INSERT INTO `tbed`.`keys`(`id`, `AccessKey`, `AccessSecret`, `Endpoint`, `Bucketname`, `RequestAddress`, `storageType`, `keyname`, `Region`, `RootPath`, `SysTransmit`) VALUES (null, '账号', '密码', '连接', '', '存储源请求域名', 9, 'WebDAV', NULL, '/', NULL);";
+    private String sql10 = "INSERT INTO `leona_tbed`.`keys`(`id`, `AccessKey`, `AccessSecret`, `Endpoint`, `Bucketname`, `RequestAddress`, `storageType`, `keyname`, `Region`, `RootPath`, `SysTransmit`) VALUES (null, '账号', '密码', '连接', '', '存储源请求域名', 9, 'WebDAV', NULL, '/', NULL);";
 
-    private String sql12 = "alter table tbed.user add `token` varchar(255)";
+    private String sql12 = "alter table leona_tbed.user add `token` varchar(255)";
     // 创建客户端程序相关表
     private String createAppclient = "CREATE TABLE `appclient`  (`id` varchar(10) NOT NULL,`isuse` varchar(10) NOT NULL,`winpackurl` varchar(255) NULL DEFAULT NULL,`macpackurl` varchar(255) NULL DEFAULT NULL,`appname` varchar(20) NULL,`applogo` varchar(255) NULL,`appupdate` varchar(10) NOT NULL) ";
     private String instartAppclient = "INSERT INTO `appclient` VALUES ('app', 'on', NULL, NULL, 'Hellohao图像托管', 'https://hellohao.nos-eastchina1.126.net/TbedClient/app.png', '1.0.1');";
     // 创建confdata表
-    private String createConfdata = "CREATE TABLE tbed.confdata ( `key` varchar(100) NULL, jsondata LONGTEXT NULL )";
-    private String instartConfdata = "INSERT INTO tbed.confdata VALUES ('config', '{\\\"sourcekey\\\":7,\\\"emails\\\":1,\\\"webname\\\":\\\"Hellohao图床\\\",\\\"explain\\\":\\\"Hellohao图像托管，是一家免费开源的图像托管，即时分享你的美好瞬间。\\\",\\\"links\\\":\\\"<p style=\\\\\\\"color:#7c7c88;\\\\\\\">© 2019 <a href=\\\\\\\"http://www.Hellohao.cn/\\\\\\\" target=\\\\\\\"_blank\\\\\\\" title=\\\\\\\"Hellohao\\\\\\\">Hellohao</a><span>  - All Rights Reserved</span> </p>\\\",\\\"notice\\\":\\\"也许...|这将是最好用的图床|为了更好的用户体验，建议您注册本站继续免费使用Hellohao图床。本站不得上传任何形式的非法图片，一旦发现，永久删除并禁封账户。情节严重者将相关资料交于相关部门处理。\\\",\\\"domain\\\":\\\"http://127.0.0.1:10088\\\",\\\"background1\\\":\\\"\\\",\\\"sett\\\":\\\"1\\\",\\\"webms\\\":\\\"Hellohao图像托管，是一家免费开源的图像托管，即时分享你的美好瞬间。\\\",\\\"webkeywords\\\":\\\"hellohao图床,图床,图片上传,开源图床,hellohao,图像托管，图片分享\\\",\\\"theme\\\":2,\\\"websubtitle\\\":\\\"这将是你用过最优秀的图像托管程序\\\",\\\"logo\\\":null,\\\"aboutinfo\\\":\\\"<img width=\\\\\\\"300px\\\\\\\" src=\\\\\\\"http://img.wwery.com/hellohao/rPscRYwz.png\\\\\\\">            <br />            <br />            <p>也许,这将是你用到最优秀的图像托管程序</p>            <p>本程序为Hellohao图象托管程序</p>            <br/>            <p style=\\\\\\\"color: #656565;\\\\\\\">作者：hellohao独立开发</p>            <p style=\\\\\\\"color: #656565;\\\\\\\">www.hellohao.cn</p>\\\"}');";
+    private String createConfdata = "CREATE TABLE leona_tbed.confdata ( `key` varchar(100) NULL, jsondata LONGTEXT NULL )";
+    private String instartConfdata = "INSERT INTO leona_tbed.confdata VALUES ('config', '{\\\"sourcekey\\\":7,\\\"emails\\\":1,\\\"webname\\\":\\\"Hellohao图床\\\",\\\"explain\\\":\\\"Hellohao图像托管，是一家免费开源的图像托管，即时分享你的美好瞬间。\\\",\\\"links\\\":\\\"<p style=\\\\\\\"color:#7c7c88;\\\\\\\">© 2019 <a href=\\\\\\\"http://www.Hellohao.cn/\\\\\\\" target=\\\\\\\"_blank\\\\\\\" title=\\\\\\\"Hellohao\\\\\\\">Hellohao</a><span>  - All Rights Reserved</span> </p>\\\",\\\"notice\\\":\\\"也许...|这将是最好用的图床|为了更好的用户体验，建议您注册本站继续免费使用Hellohao图床。本站不得上传任何形式的非法图片，一旦发现，永久删除并禁封账户。情节严重者将相关资料交于相关部门处理。\\\",\\\"domain\\\":\\\"http://127.0.0.1:10088\\\",\\\"background1\\\":\\\"\\\",\\\"sett\\\":\\\"1\\\",\\\"webms\\\":\\\"Hellohao图像托管，是一家免费开源的图像托管，即时分享你的美好瞬间。\\\",\\\"webkeywords\\\":\\\"hellohao图床,图床,图片上传,开源图床,hellohao,图像托管，图片分享\\\",\\\"theme\\\":2,\\\"websubtitle\\\":\\\"这将是你用过最优秀的图像托管程序\\\",\\\"logo\\\":null,\\\"aboutinfo\\\":\\\"<img width=\\\\\\\"300px\\\\\\\" src=\\\\\\\"http://img.wwery.com/hellohao/rPscRYwz.png\\\\\\\">            <br />            <br />            <p>也许,这将是你用到最优秀的图像托管程序</p>            <p>本程序为Hellohao图象托管程序</p>            <br/>            <p style=\\\\\\\"color: #656565;\\\\\\\">作者：hellohao独立开发</p>            <p style=\\\\\\\"color: #656565;\\\\\\\">www.hellohao.cn</p>\\\"}');";
 
     private String index_imgdata = "ALTER TABLE imgdata ADD INDEX index_md5key_url ( id,md5key,imgname,imgurl,idname,imguid)";
 
