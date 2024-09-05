@@ -5,7 +5,7 @@ package cn.hjhai.utils;
 //import java.util.Base64;
 //
 ///**
-// * Created by Hellohao on 2019-08-27.
+// * Created by Peter Zhang on 2023-08-27.
 // */
 //public class Base64Encryption {
 ////    public static void toBaseCode(String str) {

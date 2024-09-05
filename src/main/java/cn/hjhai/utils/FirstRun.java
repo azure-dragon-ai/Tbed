@@ -147,7 +147,7 @@ public class FirstRun implements InitializingBean {
     private String sql0 = "alter table `keys` add (Region varchar(255) DEFAULT null,RootPath varchar(255) DEFAULT '/');";
     private String sql1 = "select count(*) from information_schema.columns where table_name = 'uploadconfig' and column_name = 'blacklist'";
     private String sql2 = "alter table uploadconfig add blacklist varchar(500);";
-    // 创建imgandalbum和album 添加imgdata表字段explain 2019-12-20
+    // 创建imgandalbum和album 添加imgdata表字段explain 2023-12-20
     private String sql3 = "CREATE TABLE `imgandalbum`  (`imgname` varchar(5000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,`albumkey` varchar(5000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic";
     private String sql4 = "CREATE TABLE `album`  (`albumkey` varchar(5000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,`albumtitle` varchar(5000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,`createdate` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, `password` varchar(5000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic";
     private String sql6 = "alter table imgdata add explains varchar(5000)";

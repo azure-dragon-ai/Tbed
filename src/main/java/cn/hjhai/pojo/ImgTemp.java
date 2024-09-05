@@ -1,7 +1,7 @@
-package cn.hellohao.pojo;
+package cn.hjhai.pojo;
 
 /**
- * By Hellohao
+ * By Peter Zhang
  * @TableName ImgTemp
  */
 public class ImgTemp {
