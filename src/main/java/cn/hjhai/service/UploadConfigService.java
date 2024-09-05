@@ -1,6 +1,6 @@
-package cn.hellohao.service;
+package cn.hjhai.service;
 
-import cn.hellohao.pojo.UploadConfig;
+import cn.hjhai.pojo.UploadConfig;
 import org.springframework.stereotype.Service;
 
 @Service

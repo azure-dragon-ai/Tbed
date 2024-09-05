@@ -1,8 +1,8 @@
-package cn.hellohao.controller;
+package cn.hjhai.controller;
 
-import cn.hellohao.pojo.Imgreview;
-import cn.hellohao.pojo.Msg;
-import cn.hellohao.service.ImgreviewService;
+import cn.hjhai.pojo.Imgreview;
+import cn.hjhai.pojo.Msg;
+import cn.hjhai.service.ImgreviewService;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;

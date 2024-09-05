@@ -1,7 +1,7 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
-import cn.hellohao.pojo.EmailConfig;
-import cn.hellohao.pojo.Msg;
+import cn.hjhai.pojo.EmailConfig;
+import cn.hjhai.pojo.Msg;
 import cn.hutool.core.util.CharsetUtil;
 import cn.hutool.core.util.HexUtil;
 import com.alibaba.fastjson.JSONObject;

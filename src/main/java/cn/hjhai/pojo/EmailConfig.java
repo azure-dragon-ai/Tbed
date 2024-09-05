@@ -1,4 +1,4 @@
-package cn.hellohao.pojo;
+package cn.hjhai.pojo;
 
 public class EmailConfig {
     private Integer id ;

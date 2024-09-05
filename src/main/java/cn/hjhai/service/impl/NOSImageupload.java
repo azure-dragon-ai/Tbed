@@ -1,9 +1,9 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.pojo.Images;
-import cn.hellohao.pojo.Keys;
-import cn.hellohao.pojo.ReturnImage;
-import cn.hellohao.utils.SetText;
+import cn.hjhai.pojo.Images;
+import cn.hjhai.pojo.Keys;
+import cn.hjhai.pojo.ReturnImage;
+import cn.hjhai.utils.SetText;
 import com.netease.cloud.auth.BasicCredentials;
 import com.netease.cloud.auth.Credentials;
 import com.netease.cloud.services.nos.NosClient;

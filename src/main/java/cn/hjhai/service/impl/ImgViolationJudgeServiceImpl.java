@@ -1,12 +1,12 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.dao.ImgMapper;
-import cn.hellohao.dao.ImgreviewMapper;
-import cn.hellohao.pojo.Images;
-import cn.hellohao.pojo.Imgreview;
-import cn.hellohao.pojo.Keys;
-import cn.hellohao.pojo.Msg;
-import cn.hellohao.utils.FirstRun;
+import cn.hjhai.dao.ImgMapper;
+import cn.hjhai.dao.ImgreviewMapper;
+import cn.hjhai.pojo.Images;
+import cn.hjhai.pojo.Imgreview;
+import cn.hjhai.pojo.Keys;
+import cn.hjhai.pojo.Msg;
+import cn.hjhai.utils.FirstRun;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.baidu.aip.contentcensor.AipContentCensor;

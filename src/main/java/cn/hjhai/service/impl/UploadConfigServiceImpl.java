@@ -1,8 +1,8 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.dao.UploadConfigMapper;
-import cn.hellohao.pojo.UploadConfig;
-import cn.hellohao.service.UploadConfigService;
+import cn.hjhai.dao.UploadConfigMapper;
+import cn.hjhai.pojo.UploadConfig;
+import cn.hjhai.service.UploadConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

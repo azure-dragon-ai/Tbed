@@ -1,4 +1,4 @@
-package cn.hellohao.pojo.vo;
+package cn.hjhai.pojo.vo;
 
 import java.util.List;
 

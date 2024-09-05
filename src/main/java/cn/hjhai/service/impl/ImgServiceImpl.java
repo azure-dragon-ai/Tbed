@@ -1,12 +1,12 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.dao.ImgMapper;
-import cn.hellohao.dao.SysConfigMapper;
-import cn.hellohao.pojo.Images;
-import cn.hellohao.pojo.Msg;
-import cn.hellohao.pojo.SysConfig;
-import cn.hellohao.pojo.User;
-import cn.hellohao.service.ImgService;
+import cn.hjhai.dao.ImgMapper;
+import cn.hjhai.dao.SysConfigMapper;
+import cn.hjhai.pojo.Images;
+import cn.hjhai.pojo.Msg;
+import cn.hjhai.pojo.SysConfig;
+import cn.hjhai.pojo.User;
+import cn.hjhai.service.ImgService;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

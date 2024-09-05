@@ -1,4 +1,4 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
 import javax.management.MBeanServer;
 import javax.management.MalformedObjectNameException;

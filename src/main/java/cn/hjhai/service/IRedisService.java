@@ -1,4 +1,4 @@
-package cn.hellohao.service;
+package cn.hjhai.service;
 
 import java.util.Map;
 

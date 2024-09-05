@@ -1,4 +1,4 @@
-package cn.hellohao.auth.filter.xss;
+package cn.hjhai.auth.filter.xss;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;

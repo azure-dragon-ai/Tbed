@@ -1,6 +1,6 @@
-package cn.hellohao.service;
+package cn.hjhai.service;
 
-import cn.hellohao.pojo.User;
+import cn.hjhai.pojo.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

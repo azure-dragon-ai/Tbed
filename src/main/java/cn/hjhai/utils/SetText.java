@@ -1,4 +1,4 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
 import java.util.UUID;
 import java.util.regex.Matcher;

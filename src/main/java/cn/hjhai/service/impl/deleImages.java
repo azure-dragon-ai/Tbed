@@ -1,14 +1,14 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.pojo.Images;
-import cn.hellohao.pojo.Keys;
-import cn.hellohao.pojo.Msg;
-import cn.hellohao.service.IRedisService;
-import cn.hellohao.service.ImgAndAlbumService;
-import cn.hellohao.service.ImgService;
-import cn.hellohao.service.ImgTempService;
-import cn.hellohao.utils.LocUpdateImg;
-import cn.hellohao.utils.progress.MyProgress;
+import cn.hjhai.pojo.Images;
+import cn.hjhai.pojo.Keys;
+import cn.hjhai.pojo.Msg;
+import cn.hjhai.service.IRedisService;
+import cn.hjhai.service.ImgAndAlbumService;
+import cn.hjhai.service.ImgService;
+import cn.hjhai.service.ImgTempService;
+import cn.hjhai.utils.LocUpdateImg;
+import cn.hjhai.utils.progress.MyProgress;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

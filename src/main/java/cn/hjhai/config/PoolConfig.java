@@ -1,4 +1,4 @@
-package cn.hellohao.config;
+package cn.hjhai.config;
 
 import lombok.Data;
 import org.springframework.context.annotation.Bean;

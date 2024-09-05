@@ -1,6 +1,6 @@
-package cn.hellohao.quartz;
+package cn.hjhai.quartz;
 
-import cn.hellohao.quartz.job.FirstJob;
+import cn.hjhai.quartz.job.FirstJob;
 import org.quartz.JobDetail;
 import org.quartz.Trigger;
 import org.springframework.context.annotation.Bean;

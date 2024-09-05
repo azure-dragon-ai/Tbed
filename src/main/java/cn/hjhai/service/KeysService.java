@@ -1,8 +1,8 @@
-package cn.hellohao.service;
+package cn.hjhai.service;
 
 
-import cn.hellohao.pojo.Keys;
-import cn.hellohao.pojo.Msg;
+import cn.hjhai.pojo.Keys;
+import cn.hjhai.pojo.Msg;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

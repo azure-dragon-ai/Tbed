@@ -1,13 +1,13 @@
-package cn.hellohao.controller;
+package cn.hjhai.controller;
 
-import cn.hellohao.auth.filter.SubjectFilter;
-import cn.hellohao.auth.token.JWTUtil;
-import cn.hellohao.config.SysName;
-import cn.hellohao.pojo.*;
-import cn.hellohao.service.*;
-import cn.hellohao.utils.NewSendEmail;
-import cn.hellohao.utils.Print;
-import cn.hellohao.utils.SetText;
+import cn.hjhai.auth.filter.SubjectFilter;
+import cn.hjhai.auth.token.JWTUtil;
+import cn.hjhai.config.SysName;
+import cn.hjhai.pojo.*;
+import cn.hjhai.service.*;
+import cn.hjhai.utils.NewSendEmail;
+import cn.hjhai.utils.Print;
+import cn.hjhai.utils.SetText;
 import cn.hutool.core.util.HexUtil;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.shiro.SecurityUtils;

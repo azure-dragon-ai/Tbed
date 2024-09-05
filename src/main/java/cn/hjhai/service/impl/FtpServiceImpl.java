@@ -1,8 +1,8 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.pojo.Images;
-import cn.hellohao.pojo.Keys;
-import cn.hellohao.pojo.ReturnImage;
+import cn.hjhai.pojo.Images;
+import cn.hjhai.pojo.Keys;
+import cn.hjhai.pojo.ReturnImage;
 import cn.hutool.extra.ftp.Ftp;
 import cn.hutool.extra.ftp.FtpMode;
 import org.apache.commons.lang3.StringUtils;

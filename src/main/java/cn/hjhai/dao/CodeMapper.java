@@ -1,7 +1,7 @@
-package cn.hellohao.dao;
+package cn.hjhai.dao;
 
-import cn.hellohao.pojo.Code;
-import cn.hellohao.pojo.Keys;
+import cn.hjhai.pojo.Code;
+import cn.hjhai.pojo.Keys;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

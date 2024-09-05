@@ -1,4 +1,4 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;

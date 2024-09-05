@@ -1,9 +1,9 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.dao.ImgTempMapper;
-import cn.hellohao.pojo.Images;
-import cn.hellohao.pojo.ImgTemp;
-import cn.hellohao.service.ImgTempService;
+import cn.hjhai.dao.ImgTempMapper;
+import cn.hjhai.pojo.Images;
+import cn.hjhai.pojo.ImgTemp;
+import cn.hjhai.service.ImgTempService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

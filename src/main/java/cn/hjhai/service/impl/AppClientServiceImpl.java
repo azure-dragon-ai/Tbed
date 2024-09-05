@@ -1,8 +1,8 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.dao.AppClientMapper;
-import cn.hellohao.pojo.AppClient;
-import cn.hellohao.service.AppClientService;
+import cn.hjhai.dao.AppClientMapper;
+import cn.hjhai.pojo.AppClient;
+import cn.hjhai.service.AppClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

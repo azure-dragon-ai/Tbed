@@ -1,4 +1,4 @@
-package cn.hellohao.utils.verifyCode;
+package cn.hjhai.utils.verifyCode;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

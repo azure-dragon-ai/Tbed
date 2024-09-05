@@ -1,6 +1,6 @@
-package cn.hellohao.service;
+package cn.hjhai.service;
 
-import cn.hellohao.pojo.EmailConfig;
+import cn.hjhai.pojo.EmailConfig;
 import org.springframework.stereotype.Service;
 
 @Service

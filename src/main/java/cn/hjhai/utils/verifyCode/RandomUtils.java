@@ -1,4 +1,4 @@
-package cn.hellohao.utils.verifyCode;
+package cn.hjhai.utils.verifyCode;
 
 import java.awt.*;
 import java.util.Random;

@@ -1,7 +1,7 @@
-package cn.hellohao;
+package cn.hjhai;
 
-import cn.hellohao.dao.KeysMapper;
-import cn.hellohao.utils.FirstRun;
+import cn.hjhai.dao.KeysMapper;
+import cn.hjhai.utils.FirstRun;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

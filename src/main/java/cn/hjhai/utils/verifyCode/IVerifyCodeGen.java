@@ -1,4 +1,4 @@
-package cn.hellohao.utils.verifyCode;
+package cn.hjhai.utils.verifyCode;
 
 import java.io.IOException;
 import java.io.OutputStream;

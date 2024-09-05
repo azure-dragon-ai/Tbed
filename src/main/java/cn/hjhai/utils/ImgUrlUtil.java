@@ -1,7 +1,7 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
-import cn.hellohao.TbedApplication;
-import cn.hellohao.pojo.Msg;
+import cn.hjhai.TbedApplication;
+import cn.hjhai.pojo.Msg;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.*;

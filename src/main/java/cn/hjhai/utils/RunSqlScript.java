@@ -1,6 +1,6 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
-import cn.hellohao.service.impl.S3Imageupload;
+import cn.hjhai.service.impl.S3Imageupload;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

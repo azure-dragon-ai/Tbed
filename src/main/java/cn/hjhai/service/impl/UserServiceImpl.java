@@ -1,11 +1,11 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.dao.CodeMapper;
-import cn.hellohao.dao.UserMapper;
-import cn.hellohao.exception.CodeException;
-import cn.hellohao.pojo.User;
-import cn.hellohao.service.UserService;
-import cn.hellohao.utils.Print;
+import cn.hjhai.dao.CodeMapper;
+import cn.hjhai.dao.UserMapper;
+import cn.hjhai.exception.CodeException;
+import cn.hjhai.pojo.User;
+import cn.hjhai.service.UserService;
+import cn.hjhai.utils.Print;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

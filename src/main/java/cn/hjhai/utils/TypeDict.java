@@ -1,6 +1,6 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
-import cn.hellohao.pojo.Msg;
+import cn.hjhai.pojo.Msg;
 import org.apache.tika.Tika;
 
 import javax.imageio.ImageIO;

@@ -1,4 +1,4 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
 import com.alibaba.fastjson.JSONObject;
 

@@ -1,7 +1,7 @@
-package cn.hellohao.dao;
+package cn.hjhai.dao;
 
-import cn.hellohao.pojo.Images;
-import cn.hellohao.pojo.User;
+import cn.hjhai.pojo.Images;
+import cn.hjhai.pojo.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

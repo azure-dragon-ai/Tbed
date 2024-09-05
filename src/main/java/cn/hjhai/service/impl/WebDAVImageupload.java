@@ -1,13 +1,13 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.config.GlobalConstant;
-import cn.hellohao.pojo.Images;
-import cn.hellohao.pojo.Keys;
-import cn.hellohao.pojo.Msg;
-import cn.hellohao.pojo.ReturnImage;
-import cn.hellohao.service.ImgService;
-import cn.hellohao.service.KeysService;
-import cn.hellohao.utils.TypeDict;
+import cn.hjhai.config.GlobalConstant;
+import cn.hjhai.pojo.Images;
+import cn.hjhai.pojo.Keys;
+import cn.hjhai.pojo.Msg;
+import cn.hjhai.pojo.ReturnImage;
+import cn.hjhai.service.ImgService;
+import cn.hjhai.service.KeysService;
+import cn.hjhai.utils.TypeDict;
 import com.github.sardine.impl.methods.HttpMkCol;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpResponse;

@@ -1,4 +1,4 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
 public class Print {
 //    正常normal

@@ -1,11 +1,11 @@
-package cn.hellohao.controller;
+package cn.hjhai.controller;
 
-import cn.hellohao.pojo.*;
-import cn.hellohao.service.*;
-import cn.hellohao.service.impl.*;
-import cn.hellohao.utils.NewSendEmail;
-import cn.hellohao.utils.Print;
-import cn.hellohao.utils.SetFiles;
+import cn.hjhai.pojo.*;
+import cn.hjhai.service.*;
+import cn.hjhai.service.impl.*;
+import cn.hjhai.utils.NewSendEmail;
+import cn.hjhai.utils.Print;
+import cn.hjhai.utils.SetFiles;
 import cn.hutool.http.HttpUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;

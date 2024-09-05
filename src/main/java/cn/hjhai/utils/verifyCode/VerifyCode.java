@@ -1,4 +1,4 @@
-package cn.hellohao.utils.verifyCode;
+package cn.hjhai.utils.verifyCode;
 
 /**
 * 验证码类

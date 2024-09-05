@@ -1,4 +1,4 @@
-package cn.hellohao.quartz.job;
+package cn.hjhai.quartz.job;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

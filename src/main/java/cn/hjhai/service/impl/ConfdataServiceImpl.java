@@ -1,8 +1,8 @@
-package cn.hellohao.service.impl;
+package cn.hjhai.service.impl;
 
-import cn.hellohao.dao.ConfdataMapper;
-import cn.hellohao.pojo.Confdata;
-import cn.hellohao.service.ConfdataService;
+import cn.hjhai.dao.ConfdataMapper;
+import cn.hjhai.pojo.Confdata;
+import cn.hjhai.service.ConfdataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

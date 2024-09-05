@@ -1,10 +1,10 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
-import cn.hellohao.config.GlobalConstant;
-import cn.hellohao.pojo.Images;
-import cn.hellohao.pojo.Keys;
-import cn.hellohao.pojo.ReturnImage;
-import cn.hellohao.service.impl.KeysServiceImpl;
+import cn.hjhai.config.GlobalConstant;
+import cn.hjhai.pojo.Images;
+import cn.hjhai.pojo.Keys;
+import cn.hjhai.pojo.ReturnImage;
+import cn.hjhai.service.impl.KeysServiceImpl;
 
 import java.io.*;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package cn.hellohao.pojo;
+package cn.hjhai.pojo;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

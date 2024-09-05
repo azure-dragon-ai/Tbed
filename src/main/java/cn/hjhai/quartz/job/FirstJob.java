@@ -1,11 +1,11 @@
-package cn.hellohao.quartz.job;
+package cn.hjhai.quartz.job;
 
-import cn.hellohao.pojo.Images;
-import cn.hellohao.pojo.Keys;
-import cn.hellohao.service.ImgTempService;
-import cn.hellohao.service.KeysService;
-import cn.hellohao.service.impl.*;
-import cn.hellohao.utils.LocUpdateImg;
+import cn.hjhai.pojo.Images;
+import cn.hjhai.pojo.Keys;
+import cn.hjhai.service.ImgTempService;
+import cn.hjhai.service.KeysService;
+import cn.hjhai.service.impl.*;
+import cn.hjhai.utils.LocUpdateImg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
 import java.net.HttpURLConnection;
 import java.net.URL;

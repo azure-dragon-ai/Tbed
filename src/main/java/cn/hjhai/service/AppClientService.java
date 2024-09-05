@@ -1,6 +1,6 @@
-package cn.hellohao.service;
+package cn.hjhai.service;
 
-import cn.hellohao.pojo.AppClient;
+import cn.hjhai.pojo.AppClient;
 import org.springframework.stereotype.Service;
 
 @Service

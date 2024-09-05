@@ -1,7 +1,7 @@
-package cn.hellohao.utils;
+package cn.hjhai.utils;
 
-import cn.hellohao.pojo.Chunk;
-import cn.hellohao.pojo.Msg;
+import cn.hjhai.pojo.Chunk;
+import cn.hjhai.pojo.Msg;
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

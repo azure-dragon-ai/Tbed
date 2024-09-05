@@ -1,6 +1,6 @@
-package cn.hellohao.dao;
+package cn.hjhai.dao;
 
-import cn.hellohao.pojo.EmailConfig;
+import cn.hjhai.pojo.EmailConfig;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
