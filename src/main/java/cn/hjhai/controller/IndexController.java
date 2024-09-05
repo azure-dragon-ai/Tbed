@@ -1,15 +1,15 @@
-package cn.hellohao.controller;
+package cn.hjhai.controller;
 
-import cn.hellohao.auth.token.JWTUtil;
-import cn.hellohao.config.GlobalConstant;
-import cn.hellohao.pojo.*;
-import cn.hellohao.service.*;
-import cn.hellohao.service.impl.UploadServicel;
-import cn.hellohao.service.impl.WebDAVImageupload;
-import cn.hellohao.service.impl.deleImages;
-import cn.hellohao.utils.GetIPS;
-import cn.hellohao.utils.MyVersion;
-import cn.hellohao.utils.SetFiles;
+import cn.hjhai.auth.token.JWTUtil;
+import cn.hjhai.config.GlobalConstant;
+import cn.hjhai.pojo.*;
+import cn.hjhai.service.*;
+import cn.hjhai.service.impl.UploadServicel;
+import cn.hjhai.service.impl.WebDAVImageupload;
+import cn.hjhai.service.impl.deleImages;
+import cn.hjhai.utils.GetIPS;
+import cn.hjhai.utils.MyVersion;
+import cn.hjhai.utils.SetFiles;
 import cn.hutool.captcha.CaptchaUtil;
 import cn.hutool.captcha.ShearCaptcha;
 import cn.hutool.captcha.generator.MathGenerator;
@@ -60,10 +60,10 @@ public class IndexController {
 
     @RequestMapping(value = "/")
     public String Welcome(Model model, HttpServletRequest httpServletRequest) {
-        model.addAttribute("name", "服务端程序(开源版)");
+        model.addAttribute("name", "服务端程序");
         model.addAttribute("version", version);
         model.addAttribute("ip", GetIPS.getIpAddr(httpServletRequest));
-        model.addAttribute("links", "https://github.com/Hello-hao/tbed");
+        model.addAttribute("links", "https://www.wepromo.cn");
         return "welcome";
     }
 
