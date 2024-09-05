@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.hellohao.dao.ConfdataMapper">
+<mapper namespace="cn.hjhai.dao.ConfdataMapper">
 
-    <select id="selectConfdata" resultType="cn.hellohao.pojo.Confdata">
+    <select id="selectConfdata" resultType="cn.hjhai.pojo.Confdata">
         select * from confdata where `key`=#{key}
     </select>
 
-    <update id="updateConfdata" parameterType="cn.hellohao.pojo.Confdata">
+    <update id="updateConfdata" parameterType="cn.hjhai.pojo.Confdata">
         UPDATE confdata
         <set>
             <if test="jsondata != null">

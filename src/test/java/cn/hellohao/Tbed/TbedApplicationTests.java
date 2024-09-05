@@ -1,4 +1,4 @@
-package cn.hellohao.Tbed;
+package cn.hjhai.Tbed;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

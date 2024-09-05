@@ -4,6 +4,7 @@ cp target/Tbed-2.0-Free.jar docker1/leona-fe/leona.jar
 cp docker1/leona/application.properties docker1/leona-fe/
 cp docker1/leona/application-prod.properties docker1/leona-fe/
 cp docker1/leona/Dockerfile docker1/leona-fe/
+cd docker1
 
 sudo docker compose build
 sudo docker compose down

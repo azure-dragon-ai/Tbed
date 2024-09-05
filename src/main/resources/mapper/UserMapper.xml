@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.hellohao.dao.UserMapper">
+<mapper namespace="cn.hjhai.dao.UserMapper">
 
     <!-- 用户注册 -->
-    <insert id="register" parameterType="cn.hellohao.pojo.User">
+    <insert id="register" parameterType="cn.hjhai.pojo.User">
         INSERT INTO user (id, username, PASSWORD, email, birthder, LEVEL,uid,isok,memory,groupid,token)
         VALUES (NULL, #{username}, #{password}, #{email}, #{birthder}, #{level},#{uid},#{isok},#{memory},#{groupid},#{token})
     </insert>
@@ -21,7 +21,7 @@
 
     </select>
     <!--  uid查询用户并修改  -->
-    <update id="uiduser" parameterType="cn.hellohao.pojo.User">
+    <update id="uiduser" parameterType="cn.hjhai.pojo.User">
         UPDATE `user` set `isok`=1 where uid=#{uid}
     </update>
 
@@ -45,7 +45,7 @@
     </select>
 
     <!-- Token登录 -->
-    <select id="loginByToken" parameterType="string" resultType="cn.hellohao.pojo.User">
+    <select id="loginByToken" parameterType="string" resultType="cn.hjhai.pojo.User">
         select *
         from user
         <where>
@@ -53,7 +53,7 @@
         </where>
     </select>
 
-    <select id="getUsers" parameterType="cn.hellohao.pojo.User" resultType="cn.hellohao.pojo.User">
+    <select id="getUsers" parameterType="cn.hjhai.pojo.User" resultType="cn.hjhai.pojo.User">
         SELECT id,
         username,
         email,
@@ -85,7 +85,7 @@
         </where>
     </select>
 
-    <select id="getUsersid" parameterType="integer" resultType="cn.hellohao.pojo.User">
+    <select id="getUsersid" parameterType="integer" resultType="cn.hjhai.pojo.User">
         SELECT id,
                username,
                email,
@@ -101,7 +101,7 @@
         WHERE id = #{id}
     </select>
 
-    <select id="getUsersMail" parameterType="string" resultType="cn.hellohao.pojo.User">
+    <select id="getUsersMail" parameterType="string" resultType="cn.hjhai.pojo.User">
         SELECT id,
         username,
         email,
@@ -117,7 +117,7 @@
         WHERE uid = #{uid}
     </select>
 
-    <update id="change" parameterType="cn.hellohao.pojo.User">
+    <update id="change" parameterType="cn.hjhai.pojo.User">
         UPDATE `user`
         <set>
             <if test="email != null">
@@ -142,7 +142,7 @@
         where uid=#{uid}
     </update>
 
-    <update id="changeUser" parameterType="cn.hellohao.pojo.User">
+    <update id="changeUser" parameterType="cn.hjhai.pojo.User">
         UPDATE `user`
         <set>
             <if test="email != null">
@@ -181,7 +181,7 @@
         SELECT count(*) FROM `user`
     </select>
 
-    <select id="getuserlist" resultType="cn.hellohao.pojo.User" parameterType="string">
+    <select id="getuserlist" resultType="cn.hjhai.pojo.User" parameterType="string">
         SELECT
         id,
         username,
@@ -213,14 +213,14 @@
         DELETE FROM user WHERE id=#{id}
     </delete>
 
-    <update id="setisok" parameterType="cn.hellohao.pojo.User">
+    <update id="setisok" parameterType="cn.hjhai.pojo.User">
         UPDATE `user` set `isok`=#{isok} where id=#{id}
     </update>
-    <update id="setmemory" parameterType="cn.hellohao.pojo.User">
+    <update id="setmemory" parameterType="cn.hjhai.pojo.User">
         UPDATE `user` set `memory`=#{memory} where id=#{id}
     </update>
 
-    <select id="getuserlistforgroupid" parameterType="integer" resultType="cn.hellohao.pojo.User">
+    <select id="getuserlistforgroupid" parameterType="integer" resultType="cn.hjhai.pojo.User">
         select * from user where groupid=#{groupid}
     </select>
 

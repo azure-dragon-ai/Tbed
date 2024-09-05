@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.hellohao.dao.GroupMapper">
+<mapper namespace="cn.hjhai.dao.GroupMapper">
 
 
-<!--    <select id="grouplist" resultType="cn.hellohao.pojo.Group">-->
+<!--    <select id="grouplist" resultType="cn.hjhai.pojo.Group">-->
 <!--        SELECT-->
 <!--        *-->
 <!--        FROM-->
 <!--        `group`-->
 <!--    </select>-->
 
-    <select id="grouplist" resultType="cn.hellohao.pojo.Group" parameterType="integer">
+    <select id="grouplist" resultType="cn.hjhai.pojo.Group" parameterType="integer">
         SELECT
         g.id,g.groupname,g.keyid,g.usertype,g.compress,k.storageType,k.keyname
         FROM
@@ -23,7 +23,7 @@
     </select>
 
 
-    <select id="idgrouplist" parameterType="integer" resultType="cn.hellohao.pojo.Group">
+    <select id="idgrouplist" parameterType="integer" resultType="cn.hjhai.pojo.Group">
         SELECT
             *
         FROM
@@ -31,7 +31,7 @@
         where id = #{id}
     </select>
 
-    <insert id="addgroup" parameterType="cn.hellohao.pojo.Group">
+    <insert id="addgroup" parameterType="cn.hjhai.pojo.Group">
         insert into `group` (id,groupname,keyid,usertype,compress) values (null,#{groupname},#{keyid},#{usertype},#{compress})
     </insert>
 
@@ -47,11 +47,11 @@
         delete from `group` where id=#{id}
     </delete>
 
-    <update id="setgroup" parameterType="cn.hellohao.pojo.Group">
+    <update id="setgroup" parameterType="cn.hjhai.pojo.Group">
         UPDATE `group` SET groupname=#{groupname},keyid=#{keyid},usertype=#{usertype},compress=#{compress} where id = #{id};
     </update>
 
-    <select id="getGroupFroUserType" parameterType="integer" resultType="cn.hellohao.pojo.Group">
+    <select id="getGroupFroUserType" parameterType="integer" resultType="cn.hjhai.pojo.Group">
         SELECT
             *
         FROM

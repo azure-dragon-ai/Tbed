@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.hellohao.dao.KeysMapper">
+<mapper namespace="cn.hjhai.dao.KeysMapper">
 
 
     <!-- 查询对象存储key-->
-    <select id="selectKeys" parameterType="integer" resultType="cn.hellohao.pojo.Keys">
+    <select id="selectKeys" parameterType="integer" resultType="cn.hjhai.pojo.Keys">
         SELECT
             *
         FROM
@@ -13,12 +13,12 @@
             id = #{id}
     </select>
     <!-- 查询添加的所有对象存储-->
-    <select id="getStorageName"  resultType="cn.hellohao.pojo.Keys">
+    <select id="getStorageName"  resultType="cn.hjhai.pojo.Keys">
         select id,keyname,storageType from `keys`
     </select>
 
     <!-- 查询对象存储有多少种-->
-    <select id="getStorage"  resultType="cn.hellohao.pojo.Keys">
+    <select id="getStorage"  resultType="cn.hjhai.pojo.Keys">
         SELECT storageType,id,
                CASE WHEN storageType=1 THEN '网易云'
                     WHEN storageType=2 THEN '阿里云'
@@ -36,14 +36,14 @@
     </select>
 
     <!-- 查询对象存储key-->
-    <select id="getKeys" parameterType="integer" resultType="cn.hellohao.pojo.Keys">
+    <select id="getKeys" parameterType="integer" resultType="cn.hjhai.pojo.Keys">
         SELECT
             *
         FROM
             `keys`
     </select>
 
-    <update id="updateKey" parameterType="cn.hellohao.pojo.Keys">
+    <update id="updateKey" parameterType="cn.hjhai.pojo.Keys">
         UPDATE `keys`
         SET AccessKey = #{AccessKey},
         AccessSecret = #{AccessSecret},

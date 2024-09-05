@@ -1,4 +1,5 @@
-//package cn.hellohao.utils;
+package cn.hjhai.utils;
+//package cn.hjhai.utils;
 //
 //import java.io.IOException;
 //import java.util.Base64;
