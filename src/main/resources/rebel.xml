@@ -9,7 +9,7 @@
 	<id>Tbed</id>
 
 	<classpath>
-		<dir name="D:/Data/mypoject/Tbed/target/classes">
+		<dir name="~/Tbed/target/classes">
 		</dir>
 	</classpath>
 

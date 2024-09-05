@@ -68,8 +68,7 @@ truncate table wx_user;
 mysql -h10.0.0.13 -uleona -P3306 -p
 leona123456
 
-http://152.136.174.88:8080/
-http://152.136.174.88:8080/doc.html
+http://152.136.174.88:8081/
 https://ai2.wepromo.cn
 
 npm install -g cnpm --registry=https://registry.npmmirror.com
